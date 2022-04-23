@@ -45,6 +45,7 @@
 		34D7ED6627FA2FB30057F0FA /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7ED6527FA2FB30057F0FA /* ProgressIndicator.swift */; };
 		34D7ED6927FA36050057F0FA /* PokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7ED6827FA36050057F0FA /* PokeViewController.swift */; };
 		34D7ED6C27FA36370057F0FA /* PokeViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7ED6B27FA36370057F0FA /* PokeViewControllerUI.swift */; };
+		5E8D652C280EFE5100724A76 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D652B280EFE5100724A76 /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		34D7ED6527FA2FB30057F0FA /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
 		34D7ED6827FA36050057F0FA /* PokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeViewController.swift; sourceTree = "<group>"; };
 		34D7ED6B27FA36370057F0FA /* PokeViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeViewControllerUI.swift; sourceTree = "<group>"; };
+		5E8D652B280EFE5100724A76 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 		34D7ED3127F905780057F0FA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5E8D652B280EFE5100724A76 /* AppDependencies.swift */,
 				34D7ED3227F905860057F0FA /* Common */,
 				34D7ED3427F921790057F0FA /* Home Scene */,
 				34D7ED6727FA35EF0057F0FA /* Poke Scene */,
@@ -537,6 +540,7 @@
 				34D7ED5B27FA00C00057F0FA /* ImagingWorker.swift in Sources */,
 				34D7ED4427F923740057F0FA /* TableViewBaseViewController.swift in Sources */,
 				34D7ED4E27F9BD220057F0FA /* HomeViewControllerUI.swift in Sources */,
+				5E8D652C280EFE5100724A76 /* AppDependencies.swift in Sources */,
 				34A37B8327FF522F001BAD76 /* Codable.swift in Sources */,
 				34A37BA32800C062001BAD76 /* CatImageCache.swift in Sources */,
 				34D7ED4227F923650057F0FA /* VerticalScrollViewBaseViewController.swift in Sources */,
