@@ -10,9 +10,9 @@
 		34202A3227FB799B00A65837 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34202A3127FB799B00A65837 /* HomeRepository.swift */; };
 		34202A3427FB7ABF00A65837 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34202A3327FB7ABF00A65837 /* ApiManager.swift */; };
 		34202A3727FB896F00A65837 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34202A3627FB896F00A65837 /* Constants.swift */; };
+		3488C17328E4094C0037AD40 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3488C17228E4094C0037AD40 /* ExtensionData.swift */; };
 		34A37B7E27FF4FE7001BAD76 /* CatBoyPingResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B7D27FF4FE7001BAD76 /* CatBoyPingResponseModel.swift */; };
-		34A37B8127FF50EC001BAD76 /* CatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B8027FF50EC001BAD76 /* CatError.swift */; };
-		34A37B8327FF522F001BAD76 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B8227FF522F001BAD76 /* Codable.swift */; };
+		34A37B8127FF50EC001BAD76 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B8027FF50EC001BAD76 /* NetworkError.swift */; };
 		34A37B8527FF64FF001BAD76 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B8427FF64FE001BAD76 /* ExtensionUIViewController.swift */; };
 		34A37B8727FF6F7D001BAD76 /* WhatBoySayResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B8627FF6F7D001BAD76 /* WhatBoySayResponseModel.swift */; };
 		34A37B8A27FF7ABC001BAD76 /* BakaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A37B8927FF7ABC001BAD76 /* BakaViewController.swift */; };
@@ -51,9 +51,9 @@
 		34202A3127FB799B00A65837 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 		34202A3327FB7ABF00A65837 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		34202A3627FB896F00A65837 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3488C17228E4094C0037AD40 /* ExtensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
 		34A37B7D27FF4FE7001BAD76 /* CatBoyPingResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBoyPingResponseModel.swift; sourceTree = "<group>"; };
-		34A37B8027FF50EC001BAD76 /* CatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatError.swift; sourceTree = "<group>"; };
-		34A37B8227FF522F001BAD76 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		34A37B8027FF50EC001BAD76 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		34A37B8427FF64FE001BAD76 /* ExtensionUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViewController.swift; sourceTree = "<group>"; };
 		34A37B8627FF6F7D001BAD76 /* WhatBoySayResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatBoySayResponseModel.swift; sourceTree = "<group>"; };
 		34A37B8927FF7ABC001BAD76 /* BakaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakaViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +109,27 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		3488C17128E4093E0037AD40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34D7ED4827F9B8AB0057F0FA /* ExtensionUIFont.swift */,
+				34D7ED4F27F9BF320057F0FA /* ExtensionUIColor.swift */,
+				34A37B8427FF64FE001BAD76 /* ExtensionUIViewController.swift */,
+				34A37BA42800EFA2001BAD76 /* ExtensionUIImageView.swift */,
+				3488C17228E4094C0037AD40 /* ExtensionData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3488C17428E40B460037AD40 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				34A37B8D27FF7ADE001BAD76 /* Baka Repository */,
+				34D7ED5E27FA01560057F0FA /* Home Repository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		34A37B7C27FF4F3D001BAD76 /* Response Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,18 +139,9 @@
 			path = "Response Models";
 			sourceTree = "<group>";
 		};
-		34A37B7F27FF50D6001BAD76 /* Cat Errors */ = {
-			isa = PBXGroup;
-			children = (
-				34A37B8027FF50EC001BAD76 /* CatError.swift */,
-			);
-			path = "Cat Errors";
-			sourceTree = "<group>";
-		};
 		34A37B8827FF7AA7001BAD76 /* Baka Scene */ = {
 			isa = PBXGroup;
 			children = (
-				34A37B8D27FF7ADE001BAD76 /* Baka Repository */,
 				34A37B8C27FF7ACB001BAD76 /* Baka View Model */,
 				34A37B8B27FF7AC0001BAD76 /* Baka View Controller */,
 			);
@@ -215,7 +227,9 @@
 			children = (
 				34D7ED2F27F903F90057F0FA /* Application */,
 				34D7ED3C27F921E20057F0FA /* Utilities */,
+				3488C17128E4093E0037AD40 /* Extensions */,
 				34D7ED3327F905FC0057F0FA /* Networking */,
+				3488C17428E40B460037AD40 /* Repositories */,
 				34D7ED5727FA00010057F0FA /* Workers */,
 				34D7ED3127F905780057F0FA /* Scenes */,
 				34D7ED3027F9051F0057F0FA /* Resources */,
@@ -267,9 +281,9 @@
 		34D7ED3327F905FC0057F0FA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				34A37B8027FF50EC001BAD76 /* NetworkError.swift */,
 				34D7ED6227FA11930057F0FA /* CatUrls.swift */,
 				34202A3327FB7ABF00A65837 /* ApiManager.swift */,
-				34A37B8227FF522F001BAD76 /* Codable.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -278,7 +292,6 @@
 			isa = PBXGroup;
 			children = (
 				34D7ED5F27FA0C060057F0FA /* Home Router */,
-				34D7ED5E27FA01560057F0FA /* Home Repository */,
 				34D7ED3827F9219A0057F0FA /* Home View Model */,
 				34D7ED3527F9218C0057F0FA /* Home View Controller */,
 			);
@@ -315,24 +328,11 @@
 		34D7ED3C27F921E20057F0FA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				34A37B7F27FF50D6001BAD76 /* Cat Errors */,
 				34202A3527FB896800A65837 /* Constants */,
 				34D7ED6427FA2F9F0057F0FA /* Progress Indicator */,
 				34A37BA12800C04B001BAD76 /* Cat Image Cache */,
-				34D7ED3D27F921EB0057F0FA /* Extensions */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		34D7ED3D27F921EB0057F0FA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				34D7ED4827F9B8AB0057F0FA /* ExtensionUIFont.swift */,
-				34D7ED4F27F9BF320057F0FA /* ExtensionUIColor.swift */,
-				34A37B8427FF64FE001BAD76 /* ExtensionUIViewController.swift */,
-				34A37BA42800EFA2001BAD76 /* ExtensionUIImageView.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		34D7ED4027F922790057F0FA /* Extended Base View Controllers */ = {
@@ -534,13 +534,13 @@
 				34D7ED6627FA2FB30057F0FA /* ProgressIndicator.swift in Sources */,
 				34A37B9227FF7C79001BAD76 /* BakaViewModel.swift in Sources */,
 				34A37BA028009FD2001BAD76 /* CatNavigationController.swift in Sources */,
+				3488C17328E4094C0037AD40 /* ExtensionData.swift in Sources */,
 				34D7ED5B27FA00C00057F0FA /* ImagingWorker.swift in Sources */,
 				34D7ED4427F923740057F0FA /* TableViewBaseViewController.swift in Sources */,
 				34D7ED4E27F9BD220057F0FA /* HomeViewControllerUI.swift in Sources */,
-				34A37B8327FF522F001BAD76 /* Codable.swift in Sources */,
 				34A37BA32800C062001BAD76 /* CatImageCache.swift in Sources */,
 				34D7ED4227F923650057F0FA /* VerticalScrollViewBaseViewController.swift in Sources */,
-				34A37B8127FF50EC001BAD76 /* CatError.swift in Sources */,
+				34A37B8127FF50EC001BAD76 /* NetworkError.swift in Sources */,
 				34D7ED3727F921960057F0FA /* HomeViewController.swift in Sources */,
 				34D7ED6927FA36050057F0FA /* PokeViewController.swift in Sources */,
 				34A37BA52800EFA2001BAD76 /* ExtensionUIImageView.swift in Sources */,

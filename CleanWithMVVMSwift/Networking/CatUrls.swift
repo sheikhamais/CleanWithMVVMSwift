@@ -15,36 +15,36 @@ class CatUrls
         }()
     
     //----------------------------------------------------------------------------------
-    //MARK:- Public Api Urls
+    //MARK: - Public Api Urls
     //----------------------------------------------------------------------------------
     
-    static var pingUrl: String
+    static var pingUrl: URL?
         {
-            baseCatUrl + "/ping"
+            return URL(string: baseCatUrl + "/ping")
         }
     
-    static var imgUrl: String
+    static var imgUrl: URL?
         {
-            baseCatUrl + "/img"
+            return URL(string: baseCatUrl + "/img")
         }
     
-    static var bakaUrl: String
+    static var bakaUrl: URL?
         {
-            baseCatUrl + "/baka"
+            return URL(string: baseCatUrl + "/baka")
         }
     
-    static var ballUrl: String
+    static var ballUrl: URL?
         {
-            baseCatUrl + "/8ball"
+            return URL(string: baseCatUrl + "/8ball")
         }
     
-    static var diceUrl: String
+    static var diceUrl: URL?
         {
-            baseCatUrl + "/dice"
+            return URL(string: baseCatUrl + "/dice")
         }
     
-    static var catboyUrl: String
+    static var catboyUrl: URL?
         {
-            baseCatUrl + "/catboy"
+            return URL(string: baseCatUrl + "/catboy")
         }
 }

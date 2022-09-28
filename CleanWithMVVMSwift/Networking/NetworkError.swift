@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CatError: LocalizedError
+enum NetworkError: LocalizedError
 {
     case dataNotFound
     case decodingError
@@ -15,7 +15,7 @@ enum CatError: LocalizedError
     case invalidResponse
 }
 
-extension CatError
+extension NetworkError
 {
     var errorDescription: String?
     {

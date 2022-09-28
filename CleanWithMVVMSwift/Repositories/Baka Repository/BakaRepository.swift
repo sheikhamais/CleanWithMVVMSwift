@@ -35,21 +35,21 @@ class BakaRepository: BakaRepositoryInteraction
             guard let data = data
             else
             {
-                completion(.failure(CatError.dataNotFound))
+                completion(.failure(NetworkError.dataNotFound))
                 return
             }
             
             guard let encodedModel = data.decode(into: BakaImageUrlResponseModel.self)
             else
             {
-                completion(.failure(CatError.decodingError))
+                completion(.failure(NetworkError.decodingError))
                 return
             }
             
             guard encodedModel.error == "none"
             else
             {
-                completion(.failure(CatError.invalidResponse))
+                completion(.failure(NetworkError.invalidResponse))
                 return
             }
             
